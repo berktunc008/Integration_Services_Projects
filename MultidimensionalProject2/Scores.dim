@@ -1,0 +1,156 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6b83e2a8-42d6-4cfc-a70a-7e5c34a712c1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Scores</ID>
+  <Name>Scores</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5b0953cc-4781-43fe-8803-8db8c325d19a">
+    <DataSourceViewID>ISE302 Proje Berk T</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f6f45799-e0dc-4a4f-b4f3-13e124a6a000">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ad82cb80-d9fa-4af4-808a-b8d93ec2d37b">
+      <ID>Score İd</ID>
+      <Name>Score İd</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da2fe910-5cb3-45da-8f9f-0690bd56a096">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d49d751-5c16-409b-a46b-3cb3b459df22">
+            <TableID>dbo_Scores</TableID>
+            <ColumnID>score_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3c32580d-c306-4e28-b51b-5f7f417340d0">
+          <AttributeID>Math Score</AttributeID>
+          <Name>Math Score</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c23c5ef9-2963-4891-8e0b-cf4a6319b3f4">
+          <AttributeID>Reading Score</AttributeID>
+          <Name>Reading Score</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4232d3e6-9b25-4097-b1f9-7d1b89cf4ee5">
+          <AttributeID>Writing Score</AttributeID>
+          <Name>Writing Score</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20c57841-cf95-4dee-83a9-f131c2d5e0f4">
+          <AttributeID>Student İd</AttributeID>
+          <Name>Student İd</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b1125c27-b803-4222-b944-c9aaacc4daa3">
+      <ID>Math Score</ID>
+      <Name>Math Score</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19567e3d-ad1c-41a6-93ca-6ea36446c510">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f791d1e-4179-4539-8634-510832c42183">
+            <TableID>dbo_Scores</TableID>
+            <ColumnID>math_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d79ab91-de7f-48c2-87cd-8a26d7380630">
+      <ID>Reading Score</ID>
+      <Name>Reading Score</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c9917f4a-2efd-4cb5-a877-1d784f53c563">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f29a4f78-7e48-4238-9d5d-42239e8e5d1e">
+            <TableID>dbo_Scores</TableID>
+            <ColumnID>reading_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4035adcf-adbe-4117-be23-8b4790ae3a03">
+      <ID>Writing Score</ID>
+      <Name>Writing Score</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1c82685-ecdc-4842-ab61-cdd164d52a23">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d642a8c-13a7-48c7-b27a-adb1d5709e45">
+            <TableID>dbo_Scores</TableID>
+            <ColumnID>writing_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec49ddc6-f130-469b-ade7-d02afcf04756">
+      <ID>Student İd</ID>
+      <Name>Student İd</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f5db2c22-e407-47a6-8a0a-178bf1672420">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5c0811e-3631-49e3-9e41-ba253d5a1cc9">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>student_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

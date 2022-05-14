@@ -1,0 +1,119 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="51e20ca9-76e1-4283-a277-82b0b365ae65" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ISE302 Proje Berk T</ID>
+  <Name>ISE302 Proje Berk T</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ISE302 Proje Berk T</DataSourceID>
+  <Schema>
+    <xs:schema id="ISE302_x0020_Proje_x0020_Berk_x0020_T" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ISE302_x0020_Proje_x0020_Berk_x0020_T" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6f9fc55b-1f66-46ad-abf5-dbc906a9015b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Scores" msprop:design-time-name="c90e53d9-a9a2-42fd-93bc-f6a54164fa89" msprop:DbTableName="Scores" msprop:FriendlyName="Scores" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="math_score" msprop:design-time-name="70171be2-e5f4-409c-b4ae-087eaa505fd6" msprop:DbColumnName="math_score" msprop:FriendlyName="math_score" type="xs:int" />
+                  <xs:element name="reading_score" msprop:design-time-name="c615f66f-1932-412b-a42a-7b0f3a6388dc" msprop:DbColumnName="reading_score" msprop:FriendlyName="reading_score" type="xs:int" />
+                  <xs:element name="writing_score" msprop:design-time-name="547ca269-33c8-48a2-a6fa-b27e1778f9e9" msprop:DbColumnName="writing_score" msprop:FriendlyName="writing_score" type="xs:int" />
+                  <xs:element name="score_id" msprop:design-time-name="2fcd0c9b-edbc-4d5e-9d76-2a64ade3feb7" msprop:DbColumnName="score_id" msprop:FriendlyName="score_id" type="xs:int" />
+                  <xs:element name="student_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5ed2821e-97c4-4634-b9c1-f8031cf4e9bc" msprop:DbColumnName="student_id" msprop:FriendlyName="student_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Students" msprop:design-time-name="eed4d4e4-8b2d-4b82-85a3-11c672b3524f" msprop:DbTableName="Students" msprop:FriendlyName="Students" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="race_ethnicity" msprop:design-time-name="2edd605f-f2cc-444f-afd0-6c38a74af9f7" msprop:DbColumnName="race_ethnicity" msprop:FriendlyName="race_ethnicity">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="gender" msprop:design-time-name="e8887308-1884-41ae-be67-ec2f7602469c" msprop:DbColumnName="gender" msprop:FriendlyName="gender">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="parental_level_of_education" msprop:design-time-name="cbfa5b7e-8348-4be9-beff-0f3502fb2063" msprop:DbColumnName="parental_level_of_education" msprop:FriendlyName="parental_level_of_education">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="lunch" msprop:design-time-name="a9a10430-09da-48ba-adc0-3c0a670bed97" msprop:DbColumnName="lunch" msprop:FriendlyName="lunch">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="test_preparation_course" msprop:design-time-name="d7a0eb67-0ee1-43db-b9f9-f3d98d0b9b80" msprop:DbColumnName="test_preparation_course" msprop:FriendlyName="test_preparation_course">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="student_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e2ae589c-9e9c-4919-bd34-0195d7ca22e9" msprop:DbColumnName="student_id" msprop:FriendlyName="student_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Scores" />
+          <xs:field xpath="score_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Students_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Students" />
+          <xs:field xpath="student_id" />
+        </xs:unique>
+        <xs:keyref name="FK_Scores_StudentsPerformance" refer="dbo_Students_Constraint1">
+          <xs:selector xpath=".//dbo_Scores" />
+          <xs:field xpath="student_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ISE302_x0020_Proje_x0020_Berk_x0020_T xmlns="" />
+  </Schema>
+</DataSourceView>
