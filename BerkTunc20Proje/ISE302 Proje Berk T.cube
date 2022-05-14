@@ -1,0 +1,252 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd9c693d-7b2d-42da-aa2b-21f27c00c54c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ISE302 Proje Berk T</ID>
+  <Name>ISE302 Proje Berk T</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12151" scrolltop="-3219" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29104" y="16828" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a20000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Scores" left="531" top="6819" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Scores" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Students" left="-4345" top="-344" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4763" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b120000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Students" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-163" top="3999" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="1394" height="3120" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Scores_StudentsPerformance]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="17" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="236" y="4498" />
+              <point x="236" y="5949" />
+              <point x="931" y="5949" />
+              <point x="931" y="6819" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12151</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3219</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-4345</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-344</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a5095388-795f-4531-9649-1bd32edd950e">
+      <ID>Scores</ID>
+      <Name>Scores</Name>
+      <DimensionID>Scores</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="46c2c426-888b-4c35-a8a5-cff04801067e">
+          <AttributeID>Score İd</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56ea9f85-0411-48d7-99f3-6208e441bd50">
+          <AttributeID>Math Score</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8ea2e2c-9f86-402e-9689-0a421d554223">
+          <AttributeID>Reading Score</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc7a65dc-4607-4df9-a56e-eca917fe9440">
+          <AttributeID>Writing Score</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9638f0da-17d4-47ce-9316-4afa6a4e84b0">
+          <AttributeID>Student İd</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6d7dfc40-b324-485b-b2de-6803ce858888">
+      <ID>Students</ID>
+      <Name>Students</Name>
+      <DimensionID>Students</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ff34a74d-d342-4124-a0b6-527ea61e8295">
+          <AttributeID>Student İd</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf7f9a1e-0467-4435-897a-e1884542d702">
+          <AttributeID>Race Ethnicity</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7aacd3c-6e57-413d-abba-b94e015ca509">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="910dd44f-0255-47f3-b7fb-923c76552be2">
+          <AttributeID>Parental Level Of Education</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea9c9257-7fe2-46ad-893c-237155708ad2">
+          <AttributeID>Lunch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b65d4349-4ffb-46c9-ae4e-959a75df40d1">
+          <AttributeID>Test Preparation Course</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="0e9e615c-5dae-4fe0-a460-a14305b87a25">
+      <ID>Scores</ID>
+      <Name>Scores</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ba04b0c8-3fc3-4587-8d3c-c2f11b98ae3c">
+          <ID>Math Score</ID>
+          <Name>Math Score</Name>
+          <Source dwd:design-time-name="57af7f13-4c93-4d2d-ad26-0709ee2f89ce">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cf5a110d-621c-4a7f-a55e-f9e09e0521e8">
+              <TableID>dbo_Scores</TableID>
+              <ColumnID>math_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="03c84cce-5613-433f-9dfc-36a23c55d9c1">
+          <ID>Reading Score</ID>
+          <Name>Reading Score</Name>
+          <Source dwd:design-time-name="b6c10471-8027-4144-ba75-7a7eb1fb853c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf7e8e9e-504d-4dc3-82ac-e17a56e7340b">
+              <TableID>dbo_Scores</TableID>
+              <ColumnID>reading_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8203a30c-6c12-41d9-84bf-234af368fa5a">
+          <ID>Writing Score</ID>
+          <Name>Writing Score</Name>
+          <Source dwd:design-time-name="384383c6-8b5d-4a8b-b1be-642a0e5366e7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="507a88c6-adb1-45ec-8d3d-5790dbf8301c">
+              <TableID>dbo_Scores</TableID>
+              <ColumnID>writing_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bcbeae5d-f8a4-49e2-a7e2-4c4b049dcd69">
+          <ID>Scores Count</ID>
+          <Name>Scores Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8cd48175-9459-4912-9e7c-d003e6b56f25">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="cc35db44-1047-4474-b339-392b693aa152">
+              <TableID>dbo_Scores</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="036c045a-cb1a-41bf-9a79-11ffec677c49">
+          <CubeDimensionID>Scores</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7003b535-e829-41a1-b863-6794c6f2d03c">
+              <AttributeID>Score İd</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="862cf5a2-6df3-4c29-997f-1bce9bdd9637">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb2befda-cd5b-42cc-8bd2-eb394caeb930">
+                    <TableID>dbo_Scores</TableID>
+                    <ColumnID>score_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a2fc8c97-d6f9-4ba3-b676-eecc41ecf5d2">
+          <CubeDimensionID>Students</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f07edae0-acde-4e4a-a9da-23462127eefa">
+              <AttributeID>Student İd</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3c1c7cc7-6170-4047-8c12-eacc4a181fda">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6281f5f-fc18-4476-9dcf-2e9a167f28cb">
+                    <TableID>dbo_Scores</TableID>
+                    <ColumnID>student_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="440e48b9-6fa6-4fb2-915c-db0f710e61e4">
+    <DataSourceViewID>ISE302 Proje Berk T</DataSourceViewID>
+  </Source>
+</Cube>

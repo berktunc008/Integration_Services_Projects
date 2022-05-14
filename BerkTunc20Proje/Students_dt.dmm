@@ -1,0 +1,529 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db8fec7a-d18e-4006-9db4-30acc55998d5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Students_dt</ID>
+  <Name>Students_dt</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Students</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12283" scrolltop="-5940" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="29369" y="15028" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a20000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Students" left="-853" top="-397" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4763" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b120000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Students" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12283</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5940</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-853</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-397</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="36d718da-eec0-4073-9d2b-e37fed8262b0">
+    <DataSourceViewID>ISE302 Proje Berk T</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a74b4165-7ffb-479e-81e6-3bad3c757b94">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5f5bd53e-5740-4671-a8b4-fd81b244c3ea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="186b126e-da8e-49d2-922f-d537ba1f5c18">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ea1f521-35e5-4944-9cc2-02e4e72bad9e">
+      <ID>Lunch</ID>
+      <Name>Lunch</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5a5b6c7-148c-4d97-ac07-555d2d9b2228">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b14940b8-85b2-4868-98b0-6c31ae275249">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>lunch</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="89b909f2-8493-4fb4-95f7-9c2e51d2dfcb">
+      <ID>Math Score</ID>
+      <Name>Math Score</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="494aa86f-1b5a-4f9b-b362-ec4e37183296">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41510fd5-29dc-4148-beb1-fe8b08277330">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>math_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="53f90d30-089f-49ee-a3e0-1cba1daefb36">
+      <ID>Parental Level Of Education</ID>
+      <Name>Parental Level Of Education</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54db2809-3dae-432a-996d-b3b74a9decfe">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4dc6097e-cefa-4cf2-9c25-1eb21174612a">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>parental_level_of_education</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="00c2f6a5-bf2d-4e80-b32e-10aba42176fa">
+      <ID>Race Ethnicity</ID>
+      <Name>Race Ethnicity</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1acae55d-5464-4ee6-bcc7-cb466374d587">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f020c62-278f-4be6-93d8-d35311e8464e">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>race_ethnicity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f0f94dfb-622c-407a-9e26-ea032447e96a">
+      <ID>Reading Score</ID>
+      <Name>Reading Score</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2102f1db-17c8-4d9b-b4bb-105b22c2cfaf">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e1b184f6-3a94-48e0-950d-0ed7759ba8e9">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>reading_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4456bc00-5c81-42ef-8d3c-54b36cf40793">
+      <ID>Student İd</ID>
+      <Name>Student İd</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33d3acbf-3a97-47d9-ba79-a83e1a010ac4">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6eb064c6-53ca-42ae-9936-e15211d67c10">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>student_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="35f7ccbf-87d2-43a1-88ca-089d21eca02f">
+      <ID>Test Preparation Course</ID>
+      <Name>Test Preparation Course</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5112df1a-ad14-4d74-aa35-f7a7503db789">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ba39f3a-6433-4fa7-85d7-927138d399ea">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>test_preparation_course</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2a8133e4-b84a-4ce6-9cc6-1a64b851d4ef">
+      <ID>Writing Score</ID>
+      <Name>Writing Score</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d6b0c48-2242-4361-8fcb-6c0792aa9745">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0cb870b4-a6d3-4a7f-a9de-34fee3c2aa73">
+            <TableID>dbo_Students</TableID>
+            <ColumnID>writing_score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="cee7495f-c78c-4bc4-85b1-a7ab5a223d49">
+      <ID>Students_ms</ID>
+      <Name>Students_ms</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="8c16028e-920b-4da5-a1b8-1b2804c6a323">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="602cb920-136c-4aca-bf93-2df4f26bc15b">
+          <ID>Lunch</ID>
+          <Name>Lunch</Name>
+          <SourceColumnID>Lunch</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="add474c1-de32-4f71-b8bb-5a6bee84999e">
+          <ID>Math Score</ID>
+          <Name>Math Score</Name>
+          <SourceColumnID>Math Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4c54fb9d-1c2e-40fc-84b1-b48c1416f420">
+          <ID>Parental Level Of Education</ID>
+          <Name>Parental Level Of Education</Name>
+          <SourceColumnID>Parental Level Of Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="26495445-6b42-4cb5-b87c-584f501c4d57">
+          <ID>Race Ethnicity</ID>
+          <Name>Race Ethnicity</Name>
+          <SourceColumnID>Race Ethnicity</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f676bf3a-a1aa-4a6f-a409-2b7974a0f4d2">
+          <ID>Reading Score</ID>
+          <Name>Reading Score</Name>
+          <SourceColumnID>Reading Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="bf0fa26f-b4c8-4309-a594-492075f0aab7">
+          <ID>Student İd</ID>
+          <Name>Student İd</Name>
+          <SourceColumnID>Student İd</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="6cc30bf7-5900-4639-b1a0-de8b8caa7c70">
+          <ID>Test Preparation Course</ID>
+          <Name>Test Preparation Course</Name>
+          <SourceColumnID>Test Preparation Course</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="36ed8d86-45ce-4893-9612-a2dcf44a1c9d">
+          <ID>Writing Score</ID>
+          <Name>Writing Score</Name>
+          <SourceColumnID>Writing Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="2c770784-e3bd-4a63-ab74-742abf66bc83">
+      <ID>naive</ID>
+      <Name>naive</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="5f0fb338-757a-464e-ae72-baee1c3a62ff">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e88b4a5c-9434-4aab-9630-58393d499526">
+          <ID>Lunch</ID>
+          <Name>Lunch</Name>
+          <SourceColumnID>Lunch</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d680db39-cf7d-46b9-9544-7b0ea9203802">
+          <ID>Math Score</ID>
+          <Name>Math Score</Name>
+          <SourceColumnID>Math Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3b3f8d34-f0a6-4033-91de-e063d848cb02">
+          <ID>Parental Level Of Education</ID>
+          <Name>Parental Level Of Education</Name>
+          <SourceColumnID>Parental Level Of Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a3ccd19a-8b03-43d8-8751-7ad651c14dc3">
+          <ID>Race Ethnicity</ID>
+          <Name>Race Ethnicity</Name>
+          <SourceColumnID>Race Ethnicity</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5bb59aa5-9aa9-4cbf-805f-d12bff542412">
+          <ID>Reading Score</ID>
+          <Name>Reading Score</Name>
+          <SourceColumnID>Reading Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="7a9a575a-4feb-4c76-ae75-39baf79ce9d6">
+          <ID>Student İd</ID>
+          <Name>Student İd</Name>
+          <SourceColumnID>Student İd</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="e16e93e3-1d23-4e31-bbc5-1abe730f690a">
+          <ID>Test Preparation Course</ID>
+          <Name>Test Preparation Course</Name>
+          <SourceColumnID>Test Preparation Course</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0fe505ea-83b6-40a0-8a48-09bceebfd6df">
+          <ID>Writing Score</ID>
+          <Name>Writing Score</Name>
+          <SourceColumnID>Writing Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="620292cc-4d96-499a-88e1-d411d39a4141">
+      <ID>association</ID>
+      <Name>association</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="ea99ef14-49c8-46eb-b024-a93dcb11c3c1">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7fbb60b8-a866-4ae4-9184-97da2cd140e4">
+          <ID>Lunch</ID>
+          <Name>Lunch</Name>
+          <SourceColumnID>Lunch</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0d68bbf4-4d0a-45c2-a20a-ee91f7552e47">
+          <ID>Parental Level Of Education</ID>
+          <Name>Parental Level Of Education</Name>
+          <SourceColumnID>Parental Level Of Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e8f86602-5ec7-4b09-ae76-cd7f4bab9fc9">
+          <ID>Race Ethnicity</ID>
+          <Name>Race Ethnicity</Name>
+          <SourceColumnID>Race Ethnicity</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7ac3aabd-7758-4fb6-a751-93cf19d2ef84">
+          <ID>Student İd</ID>
+          <Name>Student İd</Name>
+          <SourceColumnID>Student İd</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="b1799902-0ef6-47a3-9f7b-ff05eb061544">
+          <ID>Test Preparation Course</ID>
+          <Name>Test Preparation Course</Name>
+          <SourceColumnID>Test Preparation Course</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="9d59baed-5cab-4ada-a8fe-a590de081c68">
+      <ID>a</ID>
+      <Name>a</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="6da2b7e1-0e2c-4df6-8eec-08b0195434f3">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="22b68eff-358f-4670-bfa8-2548a5ec6af6">
+          <ID>Lunch</ID>
+          <Name>Lunch</Name>
+          <SourceColumnID>Lunch</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1fee35e0-6c5d-44e6-b9ad-3f04d47bcead">
+          <ID>Math Score</ID>
+          <Name>Math Score</Name>
+          <SourceColumnID>Math Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="bb07951e-ee6f-4edb-8338-d6e64366bd9d">
+          <ID>Parental Level Of Education</ID>
+          <Name>Parental Level Of Education</Name>
+          <SourceColumnID>Parental Level Of Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1530c5a2-aa28-46ba-bc36-121261126c4b">
+          <ID>Race Ethnicity</ID>
+          <Name>Race Ethnicity</Name>
+          <SourceColumnID>Race Ethnicity</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="67f48c94-0acb-4a52-b4d5-2eda4d1dee93">
+          <ID>Reading Score</ID>
+          <Name>Reading Score</Name>
+          <SourceColumnID>Reading Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="c1094c78-c762-4767-aa27-c137209d5074">
+          <ID>Student İd</ID>
+          <Name>Student İd</Name>
+          <SourceColumnID>Student İd</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="f3bae05a-a2eb-4186-a9cc-c7e6c083d99c">
+          <ID>Test Preparation Course</ID>
+          <Name>Test Preparation Course</Name>
+          <SourceColumnID>Test Preparation Course</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="042f3fbc-a8e9-41bf-871a-9e20aaac7fd8">
+          <ID>Writing Score</ID>
+          <Name>Writing Score</Name>
+          <SourceColumnID>Writing Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="74470902-a0b4-4005-92a8-d5ba3dfed8fb">
+      <ID>log</ID>
+      <Name>log</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Logistic_Regression</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="da8176b3-ca69-4ea0-9249-a76458ab4523">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f75a0987-ab58-4581-a618-44c5a40dafa6">
+          <ID>Lunch</ID>
+          <Name>Lunch</Name>
+          <SourceColumnID>Lunch</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5442fec5-14da-48c0-b349-2fb6dea04bbe">
+          <ID>Math Score</ID>
+          <Name>Math Score</Name>
+          <SourceColumnID>Math Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="c8380556-e484-43c1-81d5-9c2223a664a3">
+          <ID>Parental Level Of Education</ID>
+          <Name>Parental Level Of Education</Name>
+          <SourceColumnID>Parental Level Of Education</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fadccbe1-2ba6-420f-9ff6-e9afa8fc2bb4">
+          <ID>Race Ethnicity</ID>
+          <Name>Race Ethnicity</Name>
+          <SourceColumnID>Race Ethnicity</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d7217cf7-09f5-4b62-99b0-032edafa646f">
+          <ID>Reading Score</ID>
+          <Name>Reading Score</Name>
+          <SourceColumnID>Reading Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="a7e0454e-858d-41a3-81fe-875c4d16b2e3">
+          <ID>Student İd</ID>
+          <Name>Student İd</Name>
+          <SourceColumnID>Student İd</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="6a16bf38-19da-4e3b-80ea-b2009ac6a6f6">
+          <ID>Test Preparation Course</ID>
+          <Name>Test Preparation Course</Name>
+          <SourceColumnID>Test Preparation Course</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ef97647f-b12e-4cf7-831b-dd1f0b9d210a">
+          <ID>Writing Score</ID>
+          <Name>Writing Score</Name>
+          <SourceColumnID>Writing Score</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
